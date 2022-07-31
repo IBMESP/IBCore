@@ -8,6 +8,11 @@ import java.util.List;
 
 public class MenuItems {
 
+    /**
+     * Pre-fabricated item to fill blank spaces on my GUIs
+     *
+     * @return Black stained-glass pane without name
+     */
     public ItemStack glass(){
         ItemStack glass = new ItemStack(Material.BLACK_STAINED_GLASS_PANE);
         ItemMeta meta = glass.getItemMeta();
@@ -16,6 +21,12 @@ public class MenuItems {
         return glass;
     }
 
+    /**
+     * Pre-fabricated item to go back on my GUIs
+     *
+     * @param name Name of the back item (Multi-Languages)
+     * @return An arrow
+     */
     public ItemStack back(String name){
         ItemStack back = new ItemStack(Material.ARROW);
         ItemMeta meta = back.getItemMeta();
@@ -24,6 +35,12 @@ public class MenuItems {
         return back;
     }
 
+    /**
+     * Pre-fabricated item to search something on my GUIs
+     *
+     * @param name Name of the search item (Multi-Languages)
+     * @return An anvil
+     */
     public ItemStack search(String name){
         ItemStack search = new ItemStack(Material.ANVIL);
         ItemMeta meta = search.getItemMeta();
@@ -32,6 +49,14 @@ public class MenuItems {
         return search;
     }
 
+    /**
+     * Create an item with a display name and lore
+     *
+     * @param material Choose the material to use
+     * @param name Choose the name of the item
+     * @param lore Choose the lore of the item
+     * @return The item with name and lore
+     */
     public ItemStack createItem(Material material, String name, List<String> lore){
         ItemStack item = new ItemStack(material);
         ItemMeta meta = item.getItemMeta();

@@ -17,6 +17,14 @@ public class NonPlayerSkulls {
         key = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUv";
     }
 
+    /**
+     * Creates a skull with texture
+     *
+     * @param url The url from <a
+     *      href="https://minecraft-heads.com/">Head Database</a>
+     * @return An ItemStack skull with a texture
+     *
+     */
     public ItemStack getSkull(String url) {
         ItemStack head = new ItemStack(Material.PLAYER_HEAD);
         if ((key + url).isEmpty()) {
