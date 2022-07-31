@@ -4,8 +4,8 @@ import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 
 public class Utils {
-    public void urgentConsoleWarning(String msg) {
-        Bukkit.getConsoleSender().sendMessage("[Backpacks] " + ChatColor.RED + msg);
+    public void urgentConsoleWarning(String name,String msg) {
+        Bukkit.getConsoleSender().sendMessage(name + " " + ChatColor.RED + msg);
     }
 
     public String capitalizeFirstLetter(String string) {
