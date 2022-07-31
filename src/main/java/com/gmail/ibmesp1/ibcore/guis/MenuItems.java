@@ -16,7 +16,7 @@ public enum MenuItems {
     SEARCH(Material.ANVIL,"gui.items.search"),
     PAGE(Material.ARROW,"gui.");
 
-    private ItemStack item;
+    private final ItemStack item;
 
     MenuItems(Material material, String path){
         item = createItem(material,path);
@@ -30,7 +30,10 @@ public enum MenuItems {
         return itemStack;
     }
 
-    public ItemStack getItem(){
+    public ItemStack getItem(String path){
+        ItemMeta meta = item.getItemMeta();
+        meta.setDisplayName(path);
+        item.setItemMeta(meta);
         return item;
     }
 }
