@@ -9,7 +9,7 @@ import java.util.List;
 public class MenuItems {
 
     public ItemStack glass(){
-        ItemStack glass = new ItemStack(Material.BLACK_STAINED_GLASS);
+        ItemStack glass = new ItemStack(Material.BLACK_STAINED_GLASS_PANE);
         ItemMeta meta = glass.getItemMeta();
         meta.setDisplayName(" ");
         glass.setItemMeta(meta);
