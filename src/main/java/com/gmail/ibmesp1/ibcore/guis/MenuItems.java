@@ -16,6 +16,22 @@ public class MenuItems {
         return glass;
     }
 
+    public ItemStack back(String name){
+        ItemStack back = new ItemStack(Material.ARROW);
+        ItemMeta meta = back.getItemMeta();
+        meta.setDisplayName(name);
+        back.setItemMeta(meta);
+        return back;
+    }
+
+    public ItemStack search(String name){
+        ItemStack search = new ItemStack(Material.ANVIL);
+        ItemMeta meta = search.getItemMeta();
+        meta.setDisplayName(name);
+        search.setItemMeta(meta);
+        return search;
+    }
+
     public ItemStack createItem(Material material, String name, List<String> lore){
         ItemStack item = new ItemStack(material);
         ItemMeta meta = item.getItemMeta();
