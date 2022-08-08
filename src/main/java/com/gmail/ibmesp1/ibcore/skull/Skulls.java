@@ -9,6 +9,7 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.SkullMeta;
 
 import java.lang.reflect.Field;
+import java.util.List;
 import java.util.UUID;
 
 public class Skulls {
@@ -52,14 +53,16 @@ public class Skulls {
      * Creates a skull with a player skin
      *
      * @param player The player skin you want to use
+     * @param lore If you want to add lore to the skull
      * @return An ItemStack skull with a player skin
      *
      */
-    public ItemStack playerSkull(Player player){
+    public ItemStack playerSkull(Player player, List<String> lore){
         ItemStack skull = new ItemStack(Material.PLAYER_HEAD);
         SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
         skullMeta.setOwningPlayer(player);
         skullMeta.setDisplayName(ChatColor.GOLD + player.getName());
+        skullMeta.setLore(lore);
         skull.setItemMeta(skullMeta);
         return skull;
     }
