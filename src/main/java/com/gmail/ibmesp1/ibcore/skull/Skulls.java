@@ -52,7 +52,7 @@ public class Skulls {
      * Creates a skull with a player skin
      *
      * @param player The player skin you want to use
-     * @return An ItemStack skull with a texture
+     * @return An ItemStack skull with a player skin
      *
      */
     public ItemStack playerSkull(Player player){
