@@ -1,4 +1,4 @@
-package com.gmail.ibmesp1.ibcore.utils;
+package com.gmail.ibmesp1.ibcore.utils.fetchers;
 
 import com.google.common.collect.ImmutableList;
 import org.json.simple.JSONArray;
@@ -15,8 +15,7 @@ import java.util.concurrent.Callable;
 
 /**
  * Interface to Mojang's API to fetch player UUIDs from player names.
- *
- * Thanks to evilmidget38: http://forums.bukkit.org/threads/player-name-uuid-fetcher.250926/
+ * Thanks to evilmidget38: <a href="http://forums.bukkit.org/threads/player-name-uuid-fetcher.250926/">...</a>
  */
 public class UUIDFetcher implements Callable<Map<String, UUID>> {
     private static final double PROFILES_PER_REQUEST = 100;
