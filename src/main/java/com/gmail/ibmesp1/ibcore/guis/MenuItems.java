@@ -54,6 +54,23 @@ public class MenuItems {
      *
      * @param material Choose the material to use
      * @param name Choose the name of the item
+     *
+     * @return The item with name and lore
+     */
+    public ItemStack createItem(Material material, String name){
+        ItemStack item = new ItemStack(material);
+        ItemMeta meta = item.getItemMeta();
+        meta.setDisplayName(name);
+
+        item.setItemMeta(meta);
+        return item;
+    }
+
+    /**
+     * Create an item with a display name and lore
+     *
+     * @param material Choose the material to use
+     * @param name Choose the name of the item
      * @param lore Choose the lore of the item
      * @return The item with name and lore
      */

@@ -12,7 +12,7 @@ import java.io.InputStreamReader;
 import java.util.logging.Level;
 
 public class DataManager {
-    private JavaPlugin plugin;
+    private final JavaPlugin plugin;
     private FileConfiguration dataConfig = null;
     private File configFile = null;
     private final String fileName;
@@ -67,10 +67,6 @@ public class DataManager {
     }
 
     public boolean isEmpty(){
-        if (configFile.length() == 0L){
-            return true;
-        }else{
-            return false;
-        }
+        return configFile.length() == 0L;
     }
 }

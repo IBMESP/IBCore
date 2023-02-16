@@ -53,6 +53,22 @@ public class Skulls {
      * Creates a skull with a player skin
      *
      * @param player The player skin you want to use
+     * @return An ItemStack skull with a player skin
+     *
+     */
+    public ItemStack playerSkull(Player player){
+        ItemStack skull = new ItemStack(Material.PLAYER_HEAD);
+        SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
+        skullMeta.setOwningPlayer(player);
+        skullMeta.setDisplayName(ChatColor.GOLD + player.getName());
+        skull.setItemMeta(skullMeta);
+        return skull;
+    }
+
+    /**
+     * Creates a skull with a player skin
+     *
+     * @param player The player skin you want to use
      * @param lore If you want to add lore to the skull
      * @return An ItemStack skull with a player skin
      *

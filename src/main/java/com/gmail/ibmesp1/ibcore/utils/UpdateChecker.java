@@ -12,7 +12,7 @@ import java.util.function.Consumer;
 public class UpdateChecker {
 
     private final JavaPlugin plugin;
-    private int resourceId;
+    private final int resourceId;
 
     public UpdateChecker(JavaPlugin plugin, int resourceId) {
         this.plugin = plugin;
