@@ -14,7 +14,7 @@ import java.util.UUID;
 
 public class Skulls {
 
-    private String key;
+    private final String key;
 
     public Skulls() {
         key = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUv";
@@ -42,9 +42,7 @@ public class Skulls {
             profileField = headMeta.getClass().getDeclaredField("profile");
             profileField.setAccessible(true);
             profileField.set(headMeta, profile);
-        } catch (NoSuchFieldException | IllegalArgumentException | IllegalAccessException ignored) {
-
-        }
+        } catch (NoSuchFieldException | IllegalArgumentException | IllegalAccessException ignored){}
         head.setItemMeta(headMeta);
         return head;
     }
