@@ -38,4 +38,18 @@ public class Utils {
     public static String capitalizeFirstLetter(String string) {
         return string.substring(0, 1).toUpperCase() + string.substring(1);
     }
+
+    /**
+     * Capitalizes the first letter of a string
+     *
+     * @param languageData An object from {@link DataManager} that manages the language files
+     * @param path The String path at the languageData
+     * @return String with the first letter capitalized
+     *
+     * @author Ib
+     * @since 1.1.2
+     */
+    public String getLanguageString(DataManager languageData, String path) {
+        return languageData.getConfig().getString(path);
+    }
 }

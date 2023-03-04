@@ -27,12 +27,14 @@ public class Skulls {
      *      href="https://minecraft-heads.com/">Head Database</a>
      * @return An ItemStack skull with a texture
      *
+     * @author Ib
+     * @since 0.0.1
      */
     public ItemStack getSkull(String url) {
         ItemStack head = new ItemStack(Material.PLAYER_HEAD);
-        if ((key + url).isEmpty()) {
+
+        if ((key + url).isEmpty())
             return head;
-        }
 
         SkullMeta headMeta = (SkullMeta) head.getItemMeta();
         GameProfile profile = new GameProfile(UUID.randomUUID(), null);
@@ -53,6 +55,8 @@ public class Skulls {
      * @param player The player skin you want to use
      * @return An ItemStack skull with a player skin
      *
+     * @author Ib
+     * @since 0.0.1
      */
     public ItemStack playerSkull(Player player){
         ItemStack skull = new ItemStack(Material.PLAYER_HEAD);
@@ -70,6 +74,8 @@ public class Skulls {
      * @param lore If you want to add lore to the skull
      * @return An ItemStack skull with a player skin
      *
+     * @author Ib
+     * @since 0.0.1
      */
     public ItemStack playerSkull(Player player, List<String> lore){
         ItemStack skull = new ItemStack(Material.PLAYER_HEAD);
