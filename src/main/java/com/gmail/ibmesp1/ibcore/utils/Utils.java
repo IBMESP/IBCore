@@ -49,7 +49,7 @@ public class Utils {
      * @author Ib
      * @since 1.1.2
      */
-    public String getLanguageString(DataManager languageData, String path) {
+    public static String getLanguageString(DataManager languageData, String path) {
         return languageData.getConfig().getString(path);
     }
 }
