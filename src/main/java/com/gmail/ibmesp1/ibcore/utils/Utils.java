@@ -7,7 +7,7 @@ import org.bukkit.ChatColor;
  * Utils class use to add static methods.
  *
  * @author Ib
- * @version 1.0
+ * @version 1.1
  * @since 0.0.1
  */
 
@@ -23,7 +23,7 @@ public class Utils {
      * @since 0.0.1
      */
     public static void urgentConsoleWarning(String name,String msg) {
-        Bukkit.getConsoleSender().sendMessage(name + " " + ChatColor.RED + msg);
+        Bukkit.getLogger().warning(name + " " + ChatColor.RED + msg);
     }
 
     /**

@@ -3,7 +3,7 @@ package com.gmail.ibmesp1.ibcore.utils;
 import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
-import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.plugin.Plugin;
 
 import java.io.File;
 import java.io.IOException;
@@ -12,12 +12,12 @@ import java.io.InputStreamReader;
 import java.util.logging.Level;
 
 public class DataManager {
-    private final JavaPlugin plugin;
+    private final Plugin plugin;
     private FileConfiguration dataConfig = null;
     private File configFile = null;
     private final String fileName;
 
-    public DataManager(JavaPlugin plugin, String fileName) {
+    public DataManager(Plugin plugin, String fileName) {
         this.plugin = plugin;
         this.fileName = fileName;
         saveDefaultConfig();
