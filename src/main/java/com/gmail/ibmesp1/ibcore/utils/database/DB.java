@@ -1,4 +1,4 @@
-package com.gmail.ibmesp1.ibcore.utils;
+package com.gmail.ibmesp1.ibcore.utils.database;
 
 import java.io.File;
 import java.sql.Connection;
