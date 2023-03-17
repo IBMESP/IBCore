@@ -14,11 +14,7 @@ import java.util.UUID;
 
 public class Skulls {
 
-    private final String key;
-
-    public Skulls() {
-        key = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUv";
-    }
+    private static final String key = "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUv";
 
     /**
      * Creates a skull with texture
@@ -30,11 +26,8 @@ public class Skulls {
      * @author Ib
      * @since 0.0.1
      */
-    public ItemStack getSkull(String url) {
+    public static ItemStack getSkull(String url) {
         ItemStack head = new ItemStack(Material.PLAYER_HEAD);
-
-        if ((key + url).isEmpty())
-            return head;
 
         SkullMeta headMeta = (SkullMeta) head.getItemMeta();
         GameProfile profile = new GameProfile(UUID.randomUUID(), null);
@@ -58,7 +51,7 @@ public class Skulls {
      * @author Ib
      * @since 0.0.1
      */
-    public ItemStack playerSkull(Player player){
+    public static ItemStack playerSkull(Player player){
         ItemStack skull = new ItemStack(Material.PLAYER_HEAD);
         SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
         skullMeta.setOwningPlayer(player);
@@ -77,7 +70,7 @@ public class Skulls {
      * @author Ib
      * @since 0.0.1
      */
-    public ItemStack playerSkull(Player player, List<String> lore){
+    public static ItemStack playerSkull(Player player, List<String> lore){
         ItemStack skull = new ItemStack(Material.PLAYER_HEAD);
         SkullMeta skullMeta = (SkullMeta) skull.getItemMeta();
         skullMeta.setOwningPlayer(player);

@@ -11,7 +11,7 @@ import org.bukkit.inventory.InventoryHolder;
  * GUI abstract class to create GUIs on an easier way
  *
  * @author Ib
- * @version 1.0
+ * @version 1.1
  * @since 1.1.0
  */
 public abstract class GUI implements InventoryHolder {
@@ -31,10 +31,8 @@ public abstract class GUI implements InventoryHolder {
     public GUI(int size, String title){
         this.inventory = Bukkit.createInventory(this,size,title);
 
-        MenuItems menuItems = new MenuItems();
-
         for(int i = 0;i < size;i++)
-            this.inventory.setItem(i,menuItems.glass());
+            this.inventory.setItem(i,MenuItems.glass());
     }
 
     /**

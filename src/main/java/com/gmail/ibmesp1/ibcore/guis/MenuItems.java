@@ -10,7 +10,7 @@ import java.util.List;
  * Items to use on a GUI such as {@link MenuItems#glass()}
  *
  * @author Ib
- * @version 1.0
+ * @version 1.1
  * @since 0.0.3
  */
 public class MenuItems {
@@ -23,7 +23,7 @@ public class MenuItems {
      * @author Ib
      * @since 0.0.3
      */
-    public ItemStack glass(){
+    public static ItemStack glass(){
         ItemStack glass = new ItemStack(Material.BLACK_STAINED_GLASS_PANE);
         ItemMeta meta = glass.getItemMeta();
         meta.setDisplayName(" ");
@@ -40,7 +40,7 @@ public class MenuItems {
      * @author Ib
      * @since 0.0.3
      */
-    public ItemStack back(String name){
+    public static ItemStack back(String name){
         ItemStack back = new ItemStack(Material.ARROW);
         ItemMeta meta = back.getItemMeta();
         meta.setDisplayName(name);
@@ -57,7 +57,7 @@ public class MenuItems {
      * @author Ib
      * @since 0.0.3
      */
-    public ItemStack search(String name){
+    public static ItemStack search(String name){
         ItemStack search = new ItemStack(Material.ANVIL);
         ItemMeta meta = search.getItemMeta();
         meta.setDisplayName(name);
@@ -76,7 +76,7 @@ public class MenuItems {
      * @author Ib
      * @since 0.0.3
      */
-    public ItemStack createItem(Material material, String name){
+    public static ItemStack createItem(Material material, String name){
         ItemStack item = new ItemStack(material);
         ItemMeta meta = item.getItemMeta();
         meta.setDisplayName(name);
@@ -96,7 +96,7 @@ public class MenuItems {
      * @author Ib
      * @since 0.0.3
      */
-    public ItemStack createItem(Material material, String name, List<String> lore){
+    public static ItemStack createItem(Material material, String name, List<String> lore){
         ItemStack item = new ItemStack(material);
         ItemMeta meta = item.getItemMeta();
         meta.setDisplayName(name);
