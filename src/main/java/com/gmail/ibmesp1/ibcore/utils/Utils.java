@@ -6,7 +6,7 @@ import org.bukkit.ChatColor;
 /**
  * Utils class use to add static methods.
  *
- * @author Ib
+ * @author IB
  * @version 1.1
  * @since 0.0.1
  */
@@ -19,7 +19,7 @@ public class Utils {
      * @param name Plugin name
      * @param msg Message you want to display
      *
-     * @author Ib
+     * @author IB
      * @since 0.0.1
      */
     public static void urgentConsoleWarning(String name,String msg) {
@@ -32,7 +32,7 @@ public class Utils {
      * @param string String you want to capitalize
      * @return String with the first letter capitalized
      *
-     * @author Ib
+     * @author IB
      * @since 0.0.1
      */
     public static String capitalizeFirstLetter(String string) {
@@ -46,7 +46,7 @@ public class Utils {
      * @param path The String path at the languageData
      * @return String with the first letter capitalized
      *
-     * @author Ib
+     * @author IB
      * @since 1.1.2
      */
     public static String getLanguageString(DataManager languageData, String path) {

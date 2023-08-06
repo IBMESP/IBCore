@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * This interface manage the subcommands
  *
- * @author Ib
+ * @author IB
  * @version 1.0
  * @since 0.0.1
  */
@@ -26,7 +26,7 @@ public interface SubCommandExecutor extends TabExecutor {
      * @param label The command label
      * @param args The command arguments
      *
-     * @author Ib
+     * @author IB
      * @since 0.0.1
      */
     default boolean onCommand(CommandSender sender, Command command, String label, String[] args){
@@ -47,7 +47,7 @@ public interface SubCommandExecutor extends TabExecutor {
      * @param args The command arguments
      * @return A List of subcommands to TabComplete
      *
-     * @author Ib
+     * @author IB
      * @since 0.0.1
      */
     @Override

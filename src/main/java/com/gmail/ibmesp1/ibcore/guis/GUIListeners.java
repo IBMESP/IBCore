@@ -11,7 +11,7 @@ import org.bukkit.event.inventory.InventoryOpenEvent;
  * <p>
  * These methods call their respective methods on a {@link com.gmail.ibmesp1.ibcore.guis.GUI} class
  *
- * @author Ib
+ * @author IB
  * @since 1.1.0
  * @version 1.0
  */

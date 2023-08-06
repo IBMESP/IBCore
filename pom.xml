@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.gmail.ibmesp1</groupId>
-    <artifactId>IbCore</artifactId>
-    <version>1.2.1</version>
+    <artifactId>IBCore</artifactId>
+    <version>1.2.2</version>
     <packaging>jar</packaging>
 
-    <name>IbCore</name>
+    <name>IBCore</name>
 
     <description>Library plugin</description>
     <properties>
@@ -44,6 +44,18 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <executions>
+                <execution>
+                    <id>attach-javadocs</id>
+                    <goals>
+                        <goal>jar</goal>
+                    </goals>
+                </execution>
+            </executions>
+        </plugin>
         </plugins>
         <resources>
             <resource>

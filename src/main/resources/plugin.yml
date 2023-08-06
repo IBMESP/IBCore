@@ -1,6 +1,6 @@
-name: IbCore
+name: IBCore
 version: '${project.version}'
 main: com.gmail.ibmesp1.ibcore.IbCore
 api-version: 1.13
-authors: [Ib]
+authors: [IB]
 description: Library plugin

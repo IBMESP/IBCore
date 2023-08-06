@@ -9,8 +9,8 @@ import java.util.List;
 /**
  * Items to use on a GUI such as {@link MenuItems#glass()}
  *
- * @author Ib
- * @version 1.1
+ * @author IB
+ * @version 1.2
  * @since 0.0.3
  */
 public class MenuItems {
@@ -20,15 +20,11 @@ public class MenuItems {
      *
      * @return Black stained-glass pane without name
      *
-     * @author Ib
+     * @author IB
      * @since 0.0.3
      */
     public static ItemStack glass(){
-        ItemStack glass = new ItemStack(Material.BLACK_STAINED_GLASS_PANE);
-        ItemMeta meta = glass.getItemMeta();
-        meta.setDisplayName(" ");
-        glass.setItemMeta(meta);
-        return glass;
+        return createItem(Material.BLACK_STAINED_GLASS_PANE," ");
     }
 
     /**
@@ -37,15 +33,11 @@ public class MenuItems {
      * @param name Name of the back item (Multi-Languages)
      * @return An arrow
      *
-     * @author Ib
+     * @author IB
      * @since 0.0.3
      */
     public static ItemStack back(String name){
-        ItemStack back = new ItemStack(Material.ARROW);
-        ItemMeta meta = back.getItemMeta();
-        meta.setDisplayName(name);
-        back.setItemMeta(meta);
-        return back;
+        return createItem(Material.ARROW,name);
     }
 
     /**
@@ -54,15 +46,11 @@ public class MenuItems {
      * @param name Name of the search item (Multi-Languages)
      * @return An anvil
      *
-     * @author Ib
+     * @author IB
      * @since 0.0.3
      */
     public static ItemStack search(String name){
-        ItemStack search = new ItemStack(Material.ANVIL);
-        ItemMeta meta = search.getItemMeta();
-        meta.setDisplayName(name);
-        search.setItemMeta(meta);
-        return search;
+        return createItem(Material.ANVIL,name);
     }
 
     /**
@@ -73,7 +61,7 @@ public class MenuItems {
      *
      * @return The item with name and lore
      *
-     * @author Ib
+     * @author IB
      * @since 0.0.3
      */
     public static ItemStack createItem(Material material, String name){
@@ -93,7 +81,7 @@ public class MenuItems {
      * @param lore Choose the lore of the item
      * @return The item with name and lore
      *
-     * @author Ib
+     * @author IB
      * @since 0.0.3
      */
     public static ItemStack createItem(Material material, String name, List<String> lore){

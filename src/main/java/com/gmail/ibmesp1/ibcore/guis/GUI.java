@@ -10,7 +10,7 @@ import org.bukkit.inventory.InventoryHolder;
 /**
  * GUI abstract class to create GUIs on an easier way
  *
- * @author Ib
+ * @author IB
  * @version 1.1
  * @since 1.1.0
  */
@@ -25,7 +25,7 @@ public abstract class GUI implements InventoryHolder {
      * @param size The size of the new GUI
      * @param title The title of the new GUI
      *
-     * @author Ib
+     * @author IB
      * @since 1.1.0
      */
     public GUI(int size, String title){
@@ -42,7 +42,7 @@ public abstract class GUI implements InventoryHolder {
      *
      * @param event The InventoryOpenEvent its triggered by {@link com.gmail.ibmesp1.ibcore.guis.GUIListeners}
      *
-     * @author Ib
+     * @author IB
      * @since 1.1.0
      */
     public abstract void onOpen(InventoryOpenEvent event);
@@ -53,7 +53,7 @@ public abstract class GUI implements InventoryHolder {
      *
      * @param event The InventoryClickEvent its triggered by {@link com.gmail.ibmesp1.ibcore.guis.GUIListeners}
      *
-     * @author Ib
+     * @author IB
      * @since 1.1.0
      */
     public abstract void onClick(InventoryClickEvent event);
@@ -63,14 +63,14 @@ public abstract class GUI implements InventoryHolder {
      * This event is managed by {@link com.gmail.ibmesp1.ibcore.guis.GUIListeners}
      *
      * @param event The InventoryCloseEvent its triggered by {@link com.gmail.ibmesp1.ibcore.guis.GUIListeners}
-     * @author Ib
+     * @author IB
      * @since 1.1.0
      */
     public abstract void onClose(InventoryCloseEvent event);
 
     /**
      * A void method to fill up the GUI
-     * @author Ib
+     * @author IB
      * @since 1.1.0
      */
     public abstract void contents();
