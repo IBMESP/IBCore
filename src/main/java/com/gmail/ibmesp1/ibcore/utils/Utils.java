@@ -50,6 +50,9 @@ public class Utils {
      * @since 1.1.2
      */
     public static String getLanguageString(DataManager languageData, String path) {
+        if(languageData.getConfig().getString(path) == null)
+            return path;
+
         return languageData.getConfig().getString(path);
     }
 }
