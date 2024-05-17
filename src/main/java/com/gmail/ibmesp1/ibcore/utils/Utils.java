@@ -1,8 +1,5 @@
 package com.gmail.ibmesp1.ibcore.utils;
 
-import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
-
 /**
  * Utils class use to add static methods.
  *
@@ -12,19 +9,6 @@ import org.bukkit.ChatColor;
  */
 
 public class Utils {
-
-    /**
-     * Displays an urgent message to the console server
-     *
-     * @param name Plugin name
-     * @param msg Message you want to display
-     *
-     * @author IB
-     * @since 0.0.1
-     */
-    public static void urgentConsoleWarning(String name,String msg) {
-        Bukkit.getLogger().warning(name + " " + ChatColor.RED + msg);
-    }
 
     /**
      * Capitalizes the first letter of a string
@@ -40,7 +24,7 @@ public class Utils {
     }
 
     /**
-     * Capitalizes the first letter of a string
+     * Returns the language string
      *
      * @param languageData An object from {@link DataManager} that manages the language files
      * @param path The String path at the languageData

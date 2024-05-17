@@ -46,6 +46,7 @@ public abstract class GUI implements InventoryHolder {
      * @since 1.1.0
      */
     public abstract void onOpen(InventoryOpenEvent event);
+
     /**
      * The behaviour of the GUI when you click it
      * <p>
@@ -57,6 +58,7 @@ public abstract class GUI implements InventoryHolder {
      * @since 1.1.0
      */
     public abstract void onClick(InventoryClickEvent event);
+
     /**
      * The behaviour of the GUI when you close it
      * <p>

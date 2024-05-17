@@ -59,7 +59,6 @@ public abstract class DB {
     }
 
     /**
-     *
      * Method that returns a connection to the database
      *
      * @return The connection to the database
